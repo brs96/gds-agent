@@ -3,8 +3,7 @@ from mcp import types
 centrality_tool_definitions = [
     types.Tool(
         name="article_rank",
-        description="""Calculate ArticleRank for nodes in the graph. 
-    ArticleRank is similar to PageRank but normalizes by the number of outgoing references.""",
+        description="",
         inputSchema={
             "type": "object",
             "properties": {
@@ -60,7 +59,7 @@ centrality_tool_definitions = [
     ),
     types.Tool(
         name="articulation_points",
-        description="Find all the articulation points. Given a graph, an articulation point is a node whose removal increases the number of connected components in the graph.",
+        description="",
         inputSchema={
             "type": "object",
             "properties": {
@@ -84,7 +83,7 @@ centrality_tool_definitions = [
     ),
     types.Tool(
         name="betweenness_centrality",
-        description="""Calculate betweenness centrality for nodes in the graph.  Betweenness centrality is a measure of the number of times a node acts as a bridge along the shortest path between two other nodes.""",
+        description="",
         inputSchema={
             "type": "object",
             "properties": {
@@ -121,7 +120,7 @@ centrality_tool_definitions = [
     ),
     types.Tool(
         name="bridges",
-        description="""Find all the bridges in the graph. A bridge is an edge whose removal increases the number of connected components in the graph.""",
+        description="",
         inputSchema={
             "type": "object",
             "properties": {
@@ -145,8 +144,7 @@ centrality_tool_definitions = [
     ),
     types.Tool(
         name="CELF",
-        description="""Calculate the Cost-Effective Lazy Forward (CELF) algorithm for influence maximization in the graph. 
-        For a given k, the algorithm finds the set of k nodes that maximize the expected spread of influence in the network.""",
+        description="",
         inputSchema={
             "type": "object",
             "properties": {
@@ -182,9 +180,7 @@ centrality_tool_definitions = [
     ),
     types.Tool(
         name="closeness_centrality",
-        description="""Calculate closeness centrality for all nodes in the graph. 
-        The closeness centrality of a node measures its average farness (inverse distance) to all other nodes. 
-        Nodes with a high closeness score have the shortest distances to all other nodes.""",
+        description="",
         inputSchema={
             "type": "object",
             "properties": {
@@ -217,7 +213,7 @@ centrality_tool_definitions = [
     ),
     types.Tool(
         name="degree_centrality",
-        description="""Calculate degree centrality for all nodes in the graph""",
+        description="",
         inputSchema={
             "type": "object",
             "properties": {
@@ -254,15 +250,7 @@ centrality_tool_definitions = [
     ),
     types.Tool(
         name="eigenvector_centrality",
-        description="""Calculate eigenvector centrality for all nodes in the graph. 
-    Eigenvector Centrality is an algorithm that measures the transitive influence of nodes. 
-    Relationships originating from high-scoring nodes contribute more to the score of a node than connections from low-scoring nodes. 
-    A high eigenvector score means that a node is connected to many nodes who themselves have high scores.
-    The algorithm computes the eigenvector associated with the largest absolute eigenvalue. 
-    To compute that eigenvalue, the algorithm applies the power iteration approach. 
-    Within each iteration, the centrality score for each node is derived from the scores of its incoming neighbors. 
-    In the power iteration method, the eigenvector is L2-normalized after each iteration, leading to normalized results by default. 
-    The PageRank algorithm is a variant of Eigenvector Centrality with an additional jump probability.""",
+        description="",
         inputSchema={
             "type": "object",
             "properties": {
@@ -313,7 +301,7 @@ centrality_tool_definitions = [
     ),
     types.Tool(
         name="pagerank",
-        description="""Calculate PageRank for all nodes in the graph""",
+        description="",
         inputSchema={
             "type": "object",
             "properties": {
@@ -359,8 +347,7 @@ centrality_tool_definitions = [
     ),
     types.Tool(
         name="harmonic_centrality",
-        description="""Calculate harmonic centrality for all nodes in the graph.
-        Harmonic centrality is a variant of closeness centrality that is more robust to disconnected graphs.""",
+        description="",
         inputSchema={
             "type": "object",
             "properties": {
@@ -389,9 +376,7 @@ centrality_tool_definitions = [
     ),
     types.Tool(
         name="HITS",
-        description="""Calculate HITS (Hyperlink-Induced Topic Search) scores for nodes in the graph. 
-        The Hyperlink-Induced Topic Search (HITS) is a link analysis algorithm that rates nodes based on two scores, a hub score and an authority score. 
-        The authority score estimates the importance of the node within the network. The hub score estimates the value of its relationships to other nodes.""",
+        description="",
         inputSchema={
             "type": "object",
             "properties": {

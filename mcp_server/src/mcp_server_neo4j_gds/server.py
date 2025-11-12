@@ -77,35 +77,35 @@ async def main(db_url: str, username: str, password: str, database: str = None):
                 [
                     types.Tool(
                         name="count_nodes",
-                        description="""Count the number of nodes in the graph""",
+                        description="",
                         inputSchema={
                             "type": "object",
                         },
                     ),
                     types.Tool(
                         name="get_node_properties_keys",
-                        description="""Get all node properties keys in the database""",
+                        description="",
                         inputSchema={
                             "type": "object",
                         },
                     ),
                     types.Tool(
                         name="get_relationship_properties_keys",
-                        description="""Get all relationship properties keys in the database""",
+                        description="",
                         inputSchema={
                             "type": "object",
                         },
                     ),
                     types.Tool(
                         name="get_node_labels",
-                        description="""Get all node labels in the database""",
+                        description="",
                         inputSchema={
                             "type": "object",
                         },
                     ),
                     types.Tool(
                         name="get_relationship_types",
-                        description="""Get relationship types in the database.""",
+                        description="",
                         inputSchema={
                             "type": "object",
                         },
