@@ -77,35 +77,30 @@ async def main(db_url: str, username: str, password: str, database: str = None):
                 [
                     types.Tool(
                         name="count_nodes",
-                        description="",
                         inputSchema={
                             "type": "object",
                         },
                     ),
                     types.Tool(
                         name="get_node_properties_keys",
-                        description="",
                         inputSchema={
                             "type": "object",
                         },
                     ),
                     types.Tool(
                         name="get_relationship_properties_keys",
-                        description="",
                         inputSchema={
                             "type": "object",
                         },
                     ),
                     types.Tool(
                         name="get_node_labels",
-                        description="",
                         inputSchema={
                             "type": "object",
                         },
                     ),
                     types.Tool(
                         name="get_relationship_types",
-                        description="",
                         inputSchema={
                             "type": "object",
                         },
